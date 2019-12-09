@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-const pool=new pg({host:'localhost',database:'treetest',user:'postgres',password:'postgres',port:'5432'});
+const pool=new pg({host:'ec2-54-195-252-243.eu-west-1.compute.amazonaws.com',database:'ddoemageso3s33',user:'yrehtpfxstugzm',password:'8e0c210ad37d7846ed055f5b7c42e9858759b2757f3f8396e4fc27f999d19e99',port:'5432',ssl:true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json()); 
 
