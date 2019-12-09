@@ -26,7 +26,8 @@ app.post('/post', function(request, response){
     pool.query("INSERT INTO trees VALUES('"+request.body.Name+"',"+request.body.Latitude+","+request.body.Longitude+","+request.body.TreeHeight+");", (err1, res1) => 
         {        
             if(err1) 
-                {return console.log(err1);}
+                {   console.log(request.body);
+                    return console.log(err1);}
                 response.statusCode = 200;
                 response.setHeader('Content-Type', 'text/plain');
                 response.end('Data Store Success!\n');      

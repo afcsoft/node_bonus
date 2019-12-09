@@ -116,9 +116,21 @@ button:active {
 	
 	top:1px;
 }	
-.map {
-    display: block;
-    height:100%;
-    width: 60%;
+
+html, body {
+    width: 99%;
+    height: 99%;
+}
+
+.scroll {
+    height: 99%;
+}
+
+#map {
+    height: 100%;
     left: 20%;
-  }
+    width: 60%;
+    display: block;
+    margin-left: 21%;
+    margin-right: %21;
+}
